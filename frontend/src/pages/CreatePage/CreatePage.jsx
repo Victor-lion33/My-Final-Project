@@ -21,7 +21,7 @@ const CreatePage = () => {
 
     setLoading(true)
     try {
-      await axiosInstance.post("/notes", {
+      await axiosInstance.post("/notes/newNote", {
         title,
         content
       });
@@ -41,6 +41,7 @@ const CreatePage = () => {
       setLoading(false)
     }
   };
+
 
   return (
     <div className='min-h-screen bg-base-200'>
@@ -80,7 +81,7 @@ const CreatePage = () => {
                 </div>
 
                 <div className="card-actions justify-end">
-                  <button type='submit' className='btn btn-primary' disabled={loading}>
+                  <button type='submit' className='btn btn-primary' disabled={loading} >
                     {loading ? 'Creating...' : 'Create Note'}
                   </button>
                 </div>
