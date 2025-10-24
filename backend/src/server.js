@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000
 app.use(cors({
   origin: [
     "http://localhost:5173", // your frontend URL for development
-    "lion-homes-7q9t7591u-victor-chukwunonyes-projects.vercel.app" // your deployed frontend URL
+    "lion-note-eq7s8xkk3-victor-chukwunonyes-projects.vercel.app" // your deployed frontend URL
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
